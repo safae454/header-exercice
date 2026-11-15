@@ -1,3 +1,4 @@
+import { DatePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 interface Task {
@@ -8,7 +9,7 @@ interface Task {
 
 @Component({
   selector: 'app-task-list',
-  imports: [],
+  imports: [DatePipe, UpperCasePipe],
   templateUrl: './task-list.html',
   styleUrl: './task-list.scss',
 })
